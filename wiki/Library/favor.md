@@ -592,7 +592,7 @@ Implementing passed rulechanges:
   objectId: 24
   ruleOrder: 30520
   type: rule
-  if: exists(type="proposalPasssed" & propId==%b) &
+  if: exists(type="proposalPassed" & propId==%b) &
       exists(type="changeBeingVotedOn" & batchId==%b & objectId==%o)
   then: set(objectId==%o)(type=="changePassed")
 
